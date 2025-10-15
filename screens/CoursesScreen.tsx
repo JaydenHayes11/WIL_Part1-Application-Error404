@@ -24,21 +24,21 @@ const sixMonthCourses = [
         duration: '6Months',
         price: 'R1,500',
         maxStudents: 30,
-        description: 'Essential life skills including financial literacy, communication, time management, and goal setting',
+        description: 'To Provide first aid awareness and basic life support',
     },
      {
         name: 'Sewing',
         duration: '6months',
         price: 'R1,500',
         maxStudents: 20,
-        description: 'Learn landscape design, plant care, garden maintenance, and sustainable practices',
+        description: 'To provide alterations and new garment tailoring services',
     },
     {
         name: 'Landiscaping',
         duration: '6Months',
         price: 'R1,500',
         maxStudents: 18,
-        description: 'Master professional sewing techniques, pattern making, and garment construction',
+        description: 'To provide lanscaping services for new and established gardens',
     },
 ];
 
@@ -46,23 +46,23 @@ const sixWeekCourses = [
     {
         name: 'Child minding',
         duration: '6weeks',
-        price: 'R1,500',
+        price: 'R750',
         maxStudents: 24,
-        description: 'Comprehensive first aid training covering emergency response techniques and CPR',
+        description: 'To provide child and baby care',
     },
     {
         name: 'Cooking',
         duration: '6weeks',
-        price: 'R1,500',
+        price: 'R750',
         maxStudents: 20,
-        description: 'Learn landscape design, plant care, garden maintenance, and sustainable practices',
+        description: 'To prepare and cook nutricious family meals',
     },
     {
         name: 'Gardening maintenance',
         duration: '6weeks',
-        price: 'R1,500',
+        price: 'R750',
         maxStudents: 18,
-        description: 'Master professional sewing techniques, pattern making, and garment construction',
+        description: 'To provide basic knowledge of watering, pruning and planting in a domestic garden',
     },
 
 ];
