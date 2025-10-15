@@ -4,6 +4,12 @@
 
 # Empowering the Nation - Mobile App 
 
+## Group Name: Error404
+## Members:
+- Jayden Hayes(ST10474705)
+- Fasieg Samuels(ST10476528)
+- Aneez Samuels(ST10468512)
+
 ## Overview
 
 **Empowering the Nation** is an iOS mobile application designed to promote community empowerment through training and professional development programs. The app connects users to various short-term and long-term courses that focus on skill-building, personal growth, and career advancement. The app aims to inspire individuals to "be the change" in their communities by providing accessible education and development resources.
