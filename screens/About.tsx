@@ -18,15 +18,15 @@ type AboutScreenProps = {
 const teamMembers = [
     {
         name: 'Aneez Begg',
-        role: 'Content creator and information researcher',
+        role: 'Content creation and Wireframe Designs',
     },
     {
         name: 'Jayden Hayes',
-        role: 'web developer and designer',
+        role: 'Web Development and Logic Creation',
     },
     {
         name: 'Fasieg Samuels',
-        role: 'Application developer and software engineer',
+        role: 'Apllication Development and Testing',
     },
 ];
 
