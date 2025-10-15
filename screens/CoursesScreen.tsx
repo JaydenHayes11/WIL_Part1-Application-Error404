@@ -20,11 +20,25 @@ type CoursesScreenProps = {
 const sixMonthCourses = [
 
     {
-        name: 'Life Skills',
-        duration: '6weeks',
+        name: 'First Aid',
+        duration: '6Months',
         price: 'R1,500',
         maxStudents: 30,
         description: 'Essential life skills including financial literacy, communication, time management, and goal setting',
+    },
+     {
+        name: 'Sewing',
+        duration: '6months',
+        price: 'R1,500',
+        maxStudents: 20,
+        description: 'Learn landscape design, plant care, garden maintenance, and sustainable practices',
+    },
+    {
+        name: 'Landiscaping',
+        duration: '6Months',
+        price: 'R1,500',
+        maxStudents: 18,
+        description: 'Master professional sewing techniques, pattern making, and garment construction',
     },
 ];
 
