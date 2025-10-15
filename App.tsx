@@ -6,7 +6,6 @@ import HomeScreen from './screens/HomeScreen';
 import CoursesScreen from './screens/CoursesScreen';
 import AboutScreen from './screens/About';
 import ContactScreen from './screens/Contact';
-import Footer from './components/Footer';
 
 
 export type RootStackParamList = {
