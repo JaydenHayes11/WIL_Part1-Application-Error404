@@ -26,7 +26,7 @@ const teamMembers = [
     },
     {
         name: 'Fasieg Samuels',
-        role: 'Apllication Development and Testing',
+        role: 'Application Development and Testing',
     },
 ];
 
