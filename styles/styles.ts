@@ -10,17 +10,14 @@ const headerStyles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: 15,
     },
-    logoCircle: {
-        width: 40,
-        height: 40,
+    logoImage: {
+        width: 60,
+        height: 60,
         borderRadius: 20,
         backgroundColor: '#ffd700',
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 10,
-    },
-    logoText: {
-        fontSize: 20,
     },
     logoTitle: {
         color: '#ffffff',
@@ -270,4 +267,78 @@ const homeStyles = StyleSheet.create({
         fontSize: 24,
     },
 });
-export { headerStyles, footerStyles, coursesStyles, contactStyles, homeStyles };
+const Checkoutstyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
+    content: {
+        padding: 20,
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#333',
+        marginBottom: 24,
+    },
+    sectionTitle: {
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#333',
+        marginTop: 16,
+        marginBottom: 12,
+    },
+    courseItem: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 16,
+        borderBottomWidth: 1,
+        borderBottomColor: '#e0e0e0',
+    },
+    checkbox: {
+        width: 24,
+        height: 24,
+        borderWidth: 2,
+        borderColor: '#4A90E2',
+        borderRadius: 4,
+        marginRight: 12,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    checkboxInner: {
+        width: 14,
+        height: 14,
+        backgroundColor: '#4A90E2',
+        borderRadius: 2,
+    },
+    courseName: {
+        flex: 1,
+        fontSize: 16,
+        color: '#333',
+    },
+    coursePrice: {
+        fontSize: 16,
+        fontWeight: '600',
+        color: '#27AE60',
+    },
+    totalContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 24,
+        paddingTop: 16,
+        borderTopWidth: 2,
+        borderTopColor: '#333',
+    },
+    totalLabel: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#333',
+    },
+    totalAmount: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#27AE60',
+    },
+});
+export { headerStyles, footerStyles, coursesStyles, contactStyles, homeStyles, Checkoutstyles };

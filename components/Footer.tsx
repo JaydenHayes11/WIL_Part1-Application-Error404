@@ -34,6 +34,9 @@ export default function Footer({ navigation }: FooterProps) {
                 <TouchableOpacity onPress={() => navigation.navigate('Contact')}>
                     <Text style={footerStyles.link}>Contact</Text>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Checkout')}>
+                    <Text style={footerStyles.link}>Checkout</Text>
+                </TouchableOpacity>
             </View>
             <View style={footerStyles.section}>
                 <Text style={footerStyles.title}>Contact Info</Text>

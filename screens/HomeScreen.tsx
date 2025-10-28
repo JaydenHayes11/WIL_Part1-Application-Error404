@@ -42,7 +42,7 @@ export default function HomeScreen({ navigation }: HomeScreenProps) {
                     style={homeStyles.card}
                     onPress={() => navigation.navigate('Courses')}
                 >
-                    <Text style={homeStyles.cardTitle}>Six-week Course</Text>
+                    <Text style={homeStyles.cardTitle}>Six-Week Course</Text>
                     <Text style={homeStyles.arrow}>→</Text>
                 </TouchableOpacity>
             </ScrollView>

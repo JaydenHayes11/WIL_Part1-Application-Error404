@@ -15,12 +15,16 @@ type HeaderProps = {
     currentScreen: keyof RootStackParamList;
 };
 
+const Logo: React.FC = () => {
+    return <img src="images/new logo.png" alt="Logo" />;
+};
+
 export default function Header({ navigation, currentScreen }: HeaderProps) {
     return (
         <View style={headerStyles.header}>
             <View style={headerStyles.logo}>
-                <View style={headerStyles.logoCircle}>
-                    <Text style={headerStyles.logoText}>👤</Text>
+                <View style={headerStyles.logoImage} >
+                    <Image src="images/new logo.png" alt="Logo" />
                 </View>
                 <Text style={headerStyles.logoTitle}>Empowering the nation</Text>
             </View>
@@ -45,6 +49,12 @@ export default function Header({ navigation, currentScreen }: HeaderProps) {
                         Contact
                     </Text>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Checkout')}>
+                    <Text style={[headerStyles.navItem, currentScreen === 'Checkout' && headerStyles.navItemActive]}>
+                        Checkout
+                    </Text>
+                </TouchableOpacity>
+
             </View>
         </View>
     );

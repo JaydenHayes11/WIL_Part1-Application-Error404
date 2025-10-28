@@ -6,6 +6,7 @@ import HomeScreen from './screens/HomeScreen';
 import CoursesScreen from './screens/CoursesScreen';
 import AboutScreen from './screens/About';
 import ContactScreen from './screens/Contact';
+import CheckoutScreen from './screens/Checkout';
 
 
 export type RootStackParamList = {
@@ -13,6 +14,7 @@ export type RootStackParamList = {
   Courses: undefined;
   About: undefined;
   Contact: undefined;
+  Checkout: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -30,6 +32,7 @@ export default function App() {
         <Stack.Screen name="Courses" component={CoursesScreen} />
         <Stack.Screen name="About" component={AboutScreen} />
         <Stack.Screen name="Contact" component={ContactScreen} />
+        <Stack.Screen name="Checkout" component={CheckoutScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

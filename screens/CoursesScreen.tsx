@@ -17,16 +17,18 @@ type CoursesScreenProps = {
     navigation: NativeStackNavigationProp<RootStackParamList>;
 };
 
-const sixMonthCourses = [
+export const sixMonthCourses = [
 
     {
+        id: 'courseone',
         name: 'First Aid',
         duration: '6Months',
         price: 'R1,500',
         maxStudents: 30,
         description: 'Comprehensive first aid training covering emergency response techniques and CPR',
     },
-     {
+    {
+        id: 'coursetwo',
         name: 'Sewing',
         duration: '6months',
         price: 'R1,500',
@@ -34,6 +36,7 @@ const sixMonthCourses = [
         description: 'Master professional sewing techniques, pattern making, and garment construction',
     },
     {
+        id: 'coursethree',
         name: 'Landiscaping',
         duration: '6Months',
         price: 'R1,500',
@@ -42,8 +45,9 @@ const sixMonthCourses = [
     },
 ];
 
-const sixWeekCourses = [
+export const sixWeekCourses = [
     {
+        id: 'coursefour',
         name: 'Child minding',
         duration: '6weeks',
         price: 'R750',
@@ -51,6 +55,7 @@ const sixWeekCourses = [
         description: 'Fundamental childcare skills, safety protocols, and early childhood development principles',
     },
     {
+        id: 'coursefive',
         name: 'Cooking',
         duration: '6weeks',
         price: 'R750',
@@ -58,6 +63,7 @@ const sixWeekCourses = [
         description: 'Learn essential cooking techniques, kitchen safety, and meal preparation',
     },
     {
+        id: 'coursesix',
         name: 'Gardening maintenance',
         duration: '6weeks',
         price: 'R750',
@@ -66,6 +72,7 @@ const sixWeekCourses = [
     },
 
 ];
+
 
 export default function CoursesScreen({ navigation }: CoursesScreenProps) {
     return (
@@ -78,11 +85,11 @@ export default function CoursesScreen({ navigation }: CoursesScreenProps) {
                 </View>
 
                 <View style={coursesStyles.section}>
-                    <Text style={coursesStyles.sectionTitle}>Six-week Courses</Text>
+                    <Text style={coursesStyles.sectionTitle}>Six-Months Courses</Text>
                     <Text style={coursesStyles.sectionSubtitle}>
-                        Intensive short-term programs on essential life skills and basic professional training
+                        Comprehensive professional development programs with 6-month training and certification
                     </Text>
-                    <Text style={coursesStyles.price}>R750 per course</Text>
+                    <Text style={coursesStyles.price}>R1,500 per course</Text>
                 </View>
 
                 {sixMonthCourses.map((course, index) => (
@@ -98,11 +105,11 @@ export default function CoursesScreen({ navigation }: CoursesScreenProps) {
                 ))}
 
                 <View style={coursesStyles.section}>
-                    <Text style={coursesStyles.sectionTitle}>Six-month Courses</Text>
+                    <Text style={coursesStyles.sectionTitle}>Six-Weeks Courses</Text>
                     <Text style={coursesStyles.sectionSubtitle}>
-                        Comprehensive professional development programs with 6-month training and certification
+                        Intensive short-term programs on essential life skills and basic professional training
                     </Text>
-                    <Text style={coursesStyles.price}>R1,500 per course</Text>
+                    <Text style={coursesStyles.price}>R750 per course</Text>
                 </View>
 
                 {sixWeekCourses.map((course, index) => (
@@ -121,4 +128,3 @@ export default function CoursesScreen({ navigation }: CoursesScreenProps) {
         </SafeAreaView>
     );
 }
-
