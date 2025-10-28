@@ -32,20 +32,8 @@ interface Course {
 
 export default function CheckoutScreen({ navigation }: CheckoutScreenProps) {
   const [email, setEmail] = useState('');
-  const [phone , setPhone] = useState('');
-  const [name, setName ] = useState('');
-
-
-  const handleSubmit = () => {
-    if (!email || !phone || !name) {
-      Alert.alert('Error', 'Please fill in all fields');
-      return;
-    }
-    Alert.alert('Success', 'Your message has been sent!');
-    setEmail('');
-    setPhone('');
-    setName('');
-  };
+  const [phone, setPhone] = useState('');
+  const [name, setName] = useState('');
   const [selectedCourses, setSelectedCourses] = useState<string[]>([]);
 
   const toggleCourse = (courseId: string) => {
@@ -127,7 +115,7 @@ export default function CheckoutScreen({ navigation }: CheckoutScreenProps) {
           />
         </View>
         <View style={Checkoutstyles.content}>
-          <Text style={Checkoutstyles.title}>Select Your Courses</Text>
+          <Text style={Checkoutstyles.checktitle}>Select Your Courses</Text>
 
           <Text style={Checkoutstyles.sectionTitle}>Six-Month Courses</Text>
           {sixMonthCourses.map(renderCourse)}

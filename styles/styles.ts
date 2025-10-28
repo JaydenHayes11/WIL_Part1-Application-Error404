@@ -10,14 +10,18 @@ const headerStyles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: 15,
     },
-    logoImage: {
+    logocontainer: {
         width: 60,
         height: 60,
-        borderRadius: 20,
+        borderRadius: 30,
         backgroundColor: '#ffd700',
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 10,
+    },
+    logoImage: {
+        width: 40,  
+        height: 40,
     },
     logoTitle: {
         color: '#ffffff',
@@ -274,17 +278,18 @@ const Checkoutstyles = StyleSheet.create({
     },
     content: {
         padding: 20,
+        color: '#ffffff',
     },
-    title: {
+    checktitle: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#333',
+        color: '#ffffffff',
         marginBottom: 24,
     },
     sectionTitle: {
         fontSize: 18,
         fontWeight: '600',
-        color: '#333',
+        color: '#ffffffff',
         marginTop: 16,
         marginBottom: 12,
     },
@@ -299,7 +304,7 @@ const Checkoutstyles = StyleSheet.create({
         width: 24,
         height: 24,
         borderWidth: 2,
-        borderColor: '#4A90E2',
+        borderColor: '#ffffffff',
         borderRadius: 4,
         marginRight: 12,
         justifyContent: 'center',
@@ -308,18 +313,18 @@ const Checkoutstyles = StyleSheet.create({
     checkboxInner: {
         width: 14,
         height: 14,
-        backgroundColor: '#4A90E2',
+        backgroundColor: '#140b8fff',
         borderRadius: 2,
     },
     courseName: {
         flex: 1,
         fontSize: 16,
-        color: '#333',
+        color: '#ffffffff',
     },
     coursePrice: {
         fontSize: 16,
         fontWeight: '600',
-        color: '#27AE60',
+        color: '#ffffffff',
     },
     totalContainer: {
         flexDirection: 'row',
@@ -333,12 +338,12 @@ const Checkoutstyles = StyleSheet.create({
     totalLabel: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#333',
+        color: '#ffffffff',
     },
     totalAmount: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#27AE60',
+        color: '#ffffffff',
     },
 });
 export { headerStyles, footerStyles, coursesStyles, contactStyles, homeStyles, Checkoutstyles };
